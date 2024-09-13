@@ -10,6 +10,176 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background: #77a1d3; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #e684ae,
+          #79cbca,
+          #77a1d3
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #e684ae,
+          #79cbca,
+          #77a1d3
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .main_container {
+        background: lime;
+        width: 1000px;
+        margin: 40px auto;
+        height: 700px;
+        background: #16a085; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #f4d03f,
+          #16a085
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #f4d03f,
+          #16a085
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        border-radius: 4px;
+      }
+      .lvender {
+        background: #16a085; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #f4d03f,
+          #16a085
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #f4d03f,
+          #16a085
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .blue {
+        background-color: blue;
+        height: 700px;
+      }
+      .form-container {
+        height: 500px;
+        width: 800px;
+        /* backgound-color: aquamarine; */
+        border-radius: 20px;
+        margin-top: 50px;
+      }
+      .common {
+        height: 600px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      }
+      .form-area {
+        background: #00000057;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .learn-area {
+        background: lawngreen;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-image: url("cofee.jpg");
+        background-size: cover;
+      }
+      .logo {
+        width: 60px;
+        border-radius: 60px;
+        height: 60px;
+      }
+      .button {
+        width: 70%;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container main_container">
+      <div class="row">
+        <div class="col-12 lvender">
+          <div class="container form-container">
+            <div class="row">
+              <div class="col-6 form-area common">
+                <h3 class="h3 text-center pt-4 text-white">
+                  <img src="toplogo.png" alt="" class="logo" />
+                </h3>
+                <div class="welcome text-center">
+                  <h2 class="text-white">Welcome Back</h2>
+
+                  <button class="btn btn-outline-light w-80 button">
+                    <i class="fa-brands fa-google me-4"></i> Login with Google
+                  </button>
+                  <hr class="text-light d-flex pt-2" />
+                  <p class="help-text text-white pt-2">or login with Email</p>
+                </div>
+                <div class="form">
+                  <form action="">
+                    <div class="form-group m-3">
+                      <input
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder="Email"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group m-3">
+                      <input
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder="Password"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group m-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label
+                          class="form-check-label text-white"
+                          for="flexCheckDefault"
+                        >
+                          Keep me logged in
+                        </label>
+                        <label for="" class="ms-5"
+                          ><a href="#"> forget Password</a></label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group ms-2">
+                      <button class="btn btn-primary w-100">Log in</button>
+                    </div>
+                    <p class="text-center text-white mt-4">
+                      Don't have an account yet? <a href="">sign up</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <div class="col-6 learn-area common"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
